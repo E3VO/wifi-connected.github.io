@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guest WiFi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guest Wi‑Fi Connected</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #759FC9;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<body class="min-h-screen flex items-center justify-center text-white">
+  <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-lg p-10 max-w-md w-full text-center">
+    <h1 class="text-3xl font-bold mb-4">You're Connected!</h1>
+    <p class="text-lg mb-6">You're now online and ready to browse the internet.</p>
+    
+    <a href="https://www.google.com" class="inline-block mt-4 px-6 py-3 bg-white text-[#759FC9] font-semibold rounded-xl hover:bg-gray-100 transition">
+      Start Browsing
+    </a>
 
-  <div class="bg-white p-8 rounded-lg shadow-lg text-center max-w-md mx-auto">
-    <h1 class="text-2xl font-semibold text-green-600 mb-4">You are connected to the Guest Network WiFi.</h1>
-    <p class="text-gray-700 mb-6">You have internet! You can now close this page.</p>
+    <p class="text-sm mt-6 opacity-80">Enjoy your session!</p>
   </div>
-
 </body>
 </html>
